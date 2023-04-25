@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>Travia-Home
+    </title>
+    <link rel = "icon" href = "C:\Users\dell\OneDrive\Desktop\travel booking\images\t.jpeg" 
+        type = "image/x-icon">
+    <link href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            rel="stylesheet" integrity=
+"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity=
+"sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+            crossorigin="anonymous">
+    </script>
+      
+    <script src=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity=
+"sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous">
+    </script>
+    <style>  
+        html {   
+            height: 100%;   
+        }  
+        body {   
+            height: 100%;
+                background-image: url('C:\\Users\\dell\\OneDrive\\Desktop\\travel booking\\images\\l1.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed; 
+                background-size: 100% 100%; 
+                font-family: 'Brush Script MT', cursive; 
+        }   
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+          }
+          .global-container {  
+            height: 100%;  
+            display: flex;  
+            align-items: center;  
+            justify-content: center;    
+        }  
+        form {  
+            padding-top: 10px;  
+            font-size: 14px;  
+              
+        }  
+        .card-title {   
+        font-weight: 300;  
+         }  
+        .btn {  
+            font-size: 14px;  
+            margin-top: 20px;  
+        }  
+        .login-form { 
+            background-color: black;
+            width: 100%;  
+            margin: 20px;  
+        }  
+        .sign-up {  
+            text-align: center;  
+            padding: 20px 0 0;  
+        }  
+        .alert {  
+            margin-bottom: -30px;  
+            font-size: 13px;  
+            margin-top: 20px;  
+        }  
+        .navbar{
+            clear:both;
+            z-index:9999;
+            position:sticky;
+        }
+        </style>  
+</head>
+  
+<body>
+    <!-- NAVBAR STARTING -->
+    <!-- Use navbar class to the navbar logo 
+        to the far left of the screen-->
+        <div>
+    <nav class=" navbar navbar-expand-lg 
+         fixed-top navbar-dark py-lg-0  ">
+  
+        <a class="navbar-brand" href="#">
+  
+            <!-- Add logo with size of 90*80 -->
+            <img src="C:\Users\dell\OneDrive\Desktop\travel booking\images\t.jpeg"
+            width="90" height="80" alt="">  Travia
+        </a>
+          
+        <button class="navbar-toggler" type="button"
+                data-toggle="collapse" 
+                data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                  
+                <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse"
+                id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Something more
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="about.html">About</a>
+                        <a class="dropdown-item" href="offers.html">Offers</a>
+                      </div>
+                      </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tours.html">Tours</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Bookings
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="flight.html">Flight bookings</a>
+                      <a class="dropdown-item" href="hotel.html">Hotel bookings</a>
+                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="destinations.html">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+<br><br>
+<div style="clear:both";>
+<h1 style="text-align:center;color:white">Discover the best places <br> to enjoy your next vacation</h1><br><br>
+<h4 style="text-align:center;color:whitesmoke">We always make our customers happy by providing many choices</h4><br>
+
+
+
+
+<img src="C:\\Users\\dell\\OneDrive\\Desktop\\travel booking\\images\\a.jpg" alt="" width="300" height="400" class="center">
+
+
+<div class="form">
+  <div class="pt-5">  
+    <div class="global-container">  
+      <div class="card login-form">  
+      <div class="card-body">  
+          <h3 class="card-title text-center" style="color:white"> Search your tour</h3>  
+          <div class="card-text">  
+              <form>  
+                  <div class="form-group"> 
+                    <label for="name" style="color:white">Where To</label>
+      <input type="text" class="form-control form-control-sm" id="name" name="visitor_name" placeholder="Enter tour location" pattern=[A-Z\sa-z]{3,20} required>
+    </div>
+    <div class="card-text">
+        <label for="checkout-date" style="color:white">When to</label>
+        <input type="date" class="form-control form-control-sm" id="checkout-date" name="checkout" required>
+      </div>
+      <div class="card-text">
+        <label for="adult" style="color:white">Adults</label>
+        <input type="number" class="form-control form-control-sm" id="adult" name="total_adults" placeholder="number of adults" min="1" required>
+      </div>
+      <div class="card-text">
+        <label for="child" style="color:white">Children</label>
+        <input type="number" class="form-control form-control-sm" id="child" name="total_children" placeholder="number of children" min="0" required>
+      </div><br>
+      <a href="tours.html"><button class="btn btn-primary btn-block" type="submit">Search Tour</button></a>
+  </form>
+</div>  
+</div>  
+</div>  
+</div>
+</div>
+</div>  
+</div>
+<script>
+    var currentDateTime = new Date();
+var year = currentDateTime.getFullYear();
+var month = (currentDateTime.getMonth() + 1);
+var date = (currentDateTime.getDate() + 1);
+
+if(date < 10) {
+  date = '0' + date;
+}
+if(month < 10) {
+  month = '0' + month;
+}
+
+var dateTomorrow = year + "-" + month + "-" + date;
+var checkinElem = document.querySelector("#checkin-date");
+var checkoutElem = document.querySelector("#checkout-date");
+
+checkinElem.setAttribute("min", dateTomorrow);
+
+checkinElem.onchange = function () {
+    checkoutElem.setAttribute("min", this.value);
+}
+</script>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>Travia-About
+    </title>
+    <link rel = "icon" href = "t.jpeg" 
+        type = "image/x-icon">
+    <link href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            rel="stylesheet" integrity=
+"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity=
+"sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+            crossorigin="anonymous">
+    </script>
+      
+    <script src=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity=
+"sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous">
+    </script>
+    <link rel="shortcut icon" href="images/fav-icon.png"/>
+<!--poppins-font-family------------------->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--using-Font-Awesome-------------------->
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <style>  
+        html {   
+            height: 100%;   
+        }  
+        body {   
+            height: 100%;
+                background-image: url('l1.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed; 
+                background-size: 100% 100%;
+                font-family: 'Brush Script MT', cursive;  
+        }   
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .jumbotron{
+            color:white;
+            background-color: black;
+        }
+        .navbar{
+            clear:both;
+            z-index:9999;
+            position:sticky;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+        }
+        #testimonials{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width:100%;
+        }
+        .testimonial-heading{
+            letter-spacing: 1px;
+            margin: 30px 0px;
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .testimonial-heading h1{
+            font-size: 2.2rem;
+            font-weight: 500;
+            background-color: #202020;
+            color: #ffffff;
+            padding: 10px 20px;
+        }
+        .testimonial-heading span{
+            font-size: 1.3rem;
+            color: #252525;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .testimonial-box-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width:100%;
+        }
+        .testimonial-box{
+            width:500px;
+            box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 15px;
+            cursor: pointer;
+        }
+        .profile-img{
+            width:50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+        .profile-img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .profile{
+            display: flex;
+            align-items: center;
+        }
+        .name-user{
+            display: flex;
+            flex-direction: column;
+        }
+        .name-user strong{
+            color: #3d3d3d;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+        .name-user span{
+            color: #979797;
+            font-size: 0.8rem;
+        }
+        .reviews{
+            color: #f9d71c;
+        }
+        .box-top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .client-comment p{
+            font-size: 0.9rem;
+            color: #4b4b4b;
+        }
+        .testimonial-box:hover{
+            transform: translateY(-10px);
+            transition: all ease 0.3s;
+        }
+         
+        @media(max-width:1060px){
+            .testimonial-box{
+                width:45%;
+                padding: 10px;
+            }
+        }
+        @media(max-width:790px){
+            .testimonial-box{
+                width:100%;
+            }
+            .testimonial-heading h1{
+                font-size: 1.4rem;
+            }
+        }
+        @media(max-width:340px){
+            .box-top{
+                flex-wrap: wrap;
+                margin-bottom: 10px;
+            }
+            .reviews{
+                margin-top: 10px;
+            }
+        }
+        ::selection{
+            color: #ffffff;
+            background-color: #252525;
+        }
+         
+
+        </style>  
+</head>
+  
+<body>
+    <!-- NAVBAR STARTING -->
+    <!-- Use navbar class to the navbar logo 
+        to the far left of the screen-->
+        <div>
+    <nav class=" navbar navbar-expand-lg 
+         fixed-top navbar-dark py-lg-0  ">
+  
+        <a class="navbar-brand" href="#">
+  
+            <!-- Add logo with size of 90*80 -->
+            <img src="t.jpeg"
+            width="90" height="80" alt="">  Travia
+        </a>
+          
+        <button class="navbar-toggler" type="button"
+                data-toggle="collapse" 
+                data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                  
+                <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse"
+                id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Something more
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">About</a>
+                        <a class="dropdown-item" href="offers.html">Offers</a>
+                      </div>
+                      </li>
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="tours.html">Tours</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Bookings
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="flight.html">Flight bookings</a>
+                      <a class="dropdown-item" href="hotel.html">Hotel bookings</a>
+                    </div>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="destinations.html">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+<br><br>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1>Why choose Us?</h1>
+      <p>Honest Prices – We Have The Best Prices For Tours, And A Huge Selection Of Destinations Will Not Leave Indifferent Even Avid Tourist. Reliable Partners – We Work With The Best Tour Operators Who Over The Years Have Proven Their Professionalism.</p>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card" >
+        <div class="card-body">
+          <h4 class="card-title">Easy bookings</h4>
+          <p class="card-text">Integrates All Travel Services - Flights, Hotels, Car And Transfer Rentals, Cruises And More - In One.</p>
+        </div>
+      </div>
+
+      <div class="card" >
+        <div class="card-body">
+          <h4 class="card-title">Travel The World</h4>
+          <p class="card-text">To Engage With Different People, To Embrace Adventures As They Come And To Share New And Meaningful Experiences.</p>
+        </div>
+      </div>
+
+      <div class="card" >
+        <div class="card-body">
+          <h4 class="card-title">Enjoy tours</h4>
+          <p class="card-text">We're A Full-Service Travel Company Specializing In Custom Global Experiences That Serve Your Needs.</p>
+        </div>
+      </div>
+</div>
+<br><br>
+<div>
+    <center><h1 style="color:white">Client's reviews</h1></center>
+</div>
+  <!--Testimonials------------------->
+  <section id="testimonials">
+    <!--heading--->
+    
+    <!--testimonials-box-container------>
+    <div class="testimonial-box-container">
+        <!--BOX-1-------------->
+        <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img">
+                        <img src="a1.jpg" />
+                    </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>Touseeq Ijaz</strong>
+                        <span>@touseeqijazweb</span>
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i><!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <p>Thanks So Much For Making Our Holiday To Fiji So Easy And Simple. It Was Great Not Having To Organise Everything Individually And The Package Deal Was Perfect For Our Family.</p>
+            </div>
+        </div>
+        <!--BOX-2-------------->
+        <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img">
+                        <img src="a0.jpg" />
+                    </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>J.K Rowling</strong>
+                        <span>@jkrowling</span>
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <p>Highly Recommend! Smooth And Easy Transactions. I Would Definitely Book Through TravelOnline Again And Would Highly Recommend Their Services. Kept Updated Regularly</p>
+            </div>
+        </div>
+        <!--BOX-3-------------->
+        <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img">
+                        <img src="a3.jpg" />
+                    </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>Harry Potter</strong>
+                        <span>@DanielRedclief</span>
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i><!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <p>I Will Definitely Be Using This Service Again. BONUS, I Got A Free Beach Bag On Arrival At Hotel, I Love It, Was A Great Little Surprise, Plus That's How Our Driver Found Us On Last Day</p>
+            </div>
+        </div>
+        <!--BOX-4-------------->
+        <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                    <div class="profile-img">
+                        <img src="a4.jpg" />
+                    </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>Oliva</strong>
+                        <span>@Olivaadward</span>
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i><!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <p>Absolutely Amazing Service As Usual. Have Been Using Travia For Years And Always Will. You Made Our Trip To Bali Perfect. Thanks Guys Will Be In Touch For Our Next Holiday!</p>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

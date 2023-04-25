@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>Travia-Destinations
+    </title>
+    <link rel = "icon" href = "t.jpeg" 
+        type = "image/x-icon">
+    <link href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            rel="stylesheet" integrity=
+"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity=
+"sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+            crossorigin="anonymous">
+    </script>
+      
+    <script src=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity=
+"sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous">
+    </script>
+    <link rel="shortcut icon" href="images/fav-icon.png"/>
+<!--poppins-font-family------------------->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--using-Font-Awesome-------------------->
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <style>  
+        html {   
+            height: 100%;   
+        }  
+        body {   
+            height: 100%;
+                background-image: url('l1.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed; 
+                background-size: 100% 100%;
+                font-family: 'Brush Script MT', cursive;  
+        }   
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    
+        .navbar{
+            clear:both;
+            z-index:9999;
+            position:sticky;
+        }
+        
+        a{
+            text-decoration: none;}
+            * {
+                box-sizing: border-box;
+              }
+              
+              .column {
+                float: left;
+                width: 33.33%;
+                padding: 5px;
+              }
+              
+              .content-details {
+                position: absolute;
+                text-align: center;
+                padding-left: 1em;
+                padding-right: 1em;
+                width: 100%;
+                top: 50%;
+                left: 50%;
+                opacity: 0;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                -webkit-transition: all 0.3s ease-in-out 0s;
+                -moz-transition: all 0.3s ease-in-out 0s;
+                transition: all 0.3s ease-in-out 0s;
+              }
+              @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+
+
+.container{
+  padding: 1em 0;
+  float: left;
+  width: 50%;
+}
+@media screen and (max-width: 640px){
+  .container{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .container{
+    width: 33.33333%;
+  }
+}
+
+.container .title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+    height:400px;
+  width: 400px;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+.fadeIn-left{
+  left: 20%;
+}
+
+.fadeIn-right{
+  left: 80%;
+}
+              
+              .content-details h3{
+                color: #fff;
+                font-weight: 500;
+                letter-spacing: 0.15em;
+                margin-bottom: 0.5em;
+                text-transform: uppercase;
+              }
+              
+              .content-details p{
+                color: #fff;
+                font-size: 0.8em;
+              }
+            
+              
+              
+
+        </style>  
+</head>
+  
+<body>
+    <!-- NAVBAR STARTING -->
+    <!-- Use navbar class to the navbar logo 
+        to the far left of the screen-->
+        <div>
+    <nav class=" navbar navbar-expand-lg 
+         fixed-top navbar-dark py-lg-0  ">
+  
+        <a class="navbar-brand" href="#">
+  
+            <!-- Add logo with size of 90*80 -->
+            <img src="t.jpeg"
+            width="90" height="80" alt="">  Travia
+        </a>
+          
+        <button class="navbar-toggler" type="button"
+                data-toggle="collapse" 
+                data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                  
+                <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse"
+                id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Something more
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="about.html">About</a>
+                        <a class="dropdown-item" href="offers.html">Offers</a>
+                      </div>
+                      </li>
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="tours.html">Tours</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Bookings
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="flight.html">Flight bookings</a>
+                      <a class="dropdown-item" href="hotel.html">Hotel bookings</a>
+                    </div>
+                    </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+<br><br>
+<center><h2 style="color:white">Top Destinations to visit</h2></center><br>
+
+<div class="container">
+  <div class="content">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="d0.jpg" alt="">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">Paris, France - The city of lights</h3>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="container">
+    <div class="content">
+      <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+        <div class="content-overlay"></div>
+        <img class="content-image" src="d1.jpg" alt="">
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Machu Picchu, Peru</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="content">
+      <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+        <div class="content-overlay"></div>
+        <img class="content-image" src="d2.jpg" alt="">
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">The Grand Canyon</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="content">
+      <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+        <div class="content-overlay"></div>
+        <img class="content-image" src="d3.webp" alt="">
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">New Zealand, The land where adventures wait</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="content">
+      <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+        <div class="content-overlay"></div>
+        <img class="content-image" src="d4.jpg" alt="">
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Colosseum, Rome</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="content">
+      <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+        <div class="content-overlay"></div>
+        <img class="content-image" src="d5.jpg" alt="">
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Bora Bora, French-polynesia</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="content">
+      <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+        <div class="content-overlay"></div>
+        <img class="content-image" src="d6.jpg" alt="">
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">London - The heritage of England</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="content">
+      <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+        <div class="content-overlay"></div>
+        <img class="content-image" src="d7.webp" alt="">
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Great Barrier Reef - Australia</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="content">
+      <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank">
+        <div class="content-overlay"></div>
+        <img class="content-image" src="d8.webp" alt="">
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Iceland - For the offbeat traveller</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+                  
+        
+        </div>
+</body>
+</html>

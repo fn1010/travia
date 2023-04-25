@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>Travia-Tours
+    </title>
+    <link rel = "icon" href = "t.jpeg" 
+        type = "image/x-icon">
+    <link href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            rel="stylesheet" integrity=
+"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity=
+"sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+            crossorigin="anonymous">
+    </script>
+      
+    <script src=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity=
+"sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous">
+    </script>
+    <style>  
+        html {   
+            height: 100%;   
+        }  
+        body {   
+            height: 100%;
+                background-image: url('l1.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed; 
+                background-size: 100% 100%; 
+                font-family: 'Brush Script MT', cursive; 
+        }  
+        .global-container {  
+            height: 100%;  
+            display: flex;  
+            align-items: center;  
+            justify-content: center; 
+        }  
+        form {  
+            padding-top: 10px;  
+            font-size: 14px;  
+            margin-top: 30px;  
+        }  
+        .card-title {   
+        font-weight: 300;  
+         }  
+        .btn {  
+            font-size: 14px;  
+            margin-top: 20px;  
+        }  
+        .rainbow{
+            background-color: white;
+            border-radius: 4px; 
+            border-style: solid; 
+            color:black;
+            cursor: pointer;
+            padding: 8px 16px;
+            
+          }
+          .rainbow-1:hover{
+            background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+            animation:slidebg 5s linear infinite;
+         }
+        .navbar{
+            clear:both;
+            z-index:9999;
+            position:sticky;
+        }
+        </style>  
+</head>
+  
+<body>
+    <!-- NAVBAR STARTING -->
+    <!-- Use navbar class to the navbar logo 
+        to the far left of the screen-->
+        <div>
+    <nav class=" navbar navbar-expand-lg 
+         fixed-top navbar-dark py-lg-0 ">
+  
+        <a class="navbar-brand" href="#">
+  
+            <!-- Add logo with size of 90*80 -->
+            <img src="t.jpeg"
+            width="90" height="80" alt="">  Travia
+        </a>
+          
+        <button class="navbar-toggler" type="button"
+                data-toggle="collapse" 
+                data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                  
+                <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse"
+                id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Something more
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="about.html">About</a>
+                        <a class="dropdown-item" href="offers.html">Offers</a>
+                      </div>
+                      </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Tours</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Bookings
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="flight.html">Flight bookings</a>
+                      <a class="dropdown-item" href="hotel.html">Hotel bookings</a>
+                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="destinations.html">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+<br><br>
+<h1 style="text-align:center;color:white">Popular places</h1><br><br>
+
+<div class="row">
+    <div class="col-sm-4">
+        
+            <div class="card" style="width:400px;margin-left:20px;">
+              <img class="card-img-top" src="taj.jpg" alt="Card image" style="height:300px;width:100%">
+              <div class="card-body">
+                <h4 class="card-title">Taj Mahal</h4>
+                <p class="card-text">Agra, India</p>
+                <a class="rainbow rainbow-1">Rs. 13000</a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-sm-4">
+                <div class="card" style="width:400px">
+                  <img class="card-img-top" src="tokyo.jpg" alt="Card image" style="height:300px;width:100%">
+                  <div class="card-body">
+                    <h4 class="card-title">Tokyo</h4>
+                    <p class="card-text">Tokyo, Japan</p>
+                    <a class="rainbow rainbow-1">Rs. 23000</a>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-sm-4">
+                <div class="card" style="width:400px">
+                  <img class="card-img-top" src="hawaii.jpg" alt="Card image" style="height:300px;width:100%">
+                  <div class="card-body">
+                    <h4 class="card-title">Hawaii</h4>
+                    <p class="card-text">Hawaii, United States</p>
+                    <a class="rainbow rainbow-1">Rs. 43000</a>
+                  </div>
+                </div>
+              </div>
+        
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+        <br>
+            <div class="card " style="width:400px;margin-left:20px;margin-bottom:30px">
+              <img class="card-img-top" src="london.jpg" alt="Card image" style="height:300px;width:100%">
+              <div class="card-body">
+                <h4 class="card-title">London</h4>
+                <p class="card-text">London, United Kingdom</p>
+                <a class="rainbow rainbow-1">Rs. 53000</a>
+              </div>
+            </div>
+          </div>
+        <br><br>
+          <div class="col-sm-4">
+            <br>
+                <div class="card " style="width:400px">
+                  <img class="card-img-top" src="lotus.jpg" alt="Card image" style="height:300px;width:100%">
+                  <div class="card-body">
+                    <h4 class="card-title">Lotus temple</h4>
+                    <p class="card-text">Delhi, India</p>
+                    <a class="rainbow rainbow-1">Rs. 14000</a>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-sm-4">
+                <br>
+                <div class="card " style="width:400px">
+                  <img class="card-img-top" src="arc.jpg" alt="Card image" style="height:300px;width:100%">
+                  <div class="card-body">
+                    <h4 class="card-title">Arc de Triomphe</h4>
+                    <p class="card-text">Paris, France</p>
+                    <a class="rainbow rainbow-1">Rs. 33000</a>
+                  </div>
+                </div>
+              </div>
+        
+  </div>
+
+
+
+
+
+
+</body>
+</html>

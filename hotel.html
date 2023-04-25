@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>Travia-Hotel booking
+    </title>
+    <link rel = "icon" href = "t.jpeg" 
+        type = "image/x-icon">
+    <link href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            rel="stylesheet" integrity=
+"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity=
+"sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+            crossorigin="anonymous">
+    </script>
+      
+    <script src=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity=
+"sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous">
+    </script>
+    <link rel="shortcut icon" href="images/fav-icon.png"/>
+<!--poppins-font-family------------------->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--using-Font-Awesome-------------------->
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <style>  
+        html {   
+            height: 100%;   
+        }  
+        body {   
+            height: 100%;
+                background-image: url('l1.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed; 
+                background-size: 100% 100%;
+                font-family: 'Brush Script MT', cursive;  
+        }   
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .jumbotron{
+            color:white;
+            background-color: black;
+        }
+        .navbar{
+            clear:both;
+            z-index:9999;
+            position:sticky;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            
+            box-sizing: border-box;
+        }
+        .form-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+          }
+          
+          label {
+            width: 100px;
+            text-align: right;
+            margin-right: 5px;
+            margin-left: 5px;
+          }
+        
+          .sublabel {
+            color:gray; 
+            margin:4px; 
+            font-size: 11px;
+          }
+          
+          input[type="text"],
+          input[type="date"] {
+            padding: 10px;
+            font-size: 14px;
+          }
+        
+          button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #0050A0;
+            border: none;
+            cursor: pointer;
+          }
+        
+          .custom-bg {
+            background-color: #F7F7F9;
+          }
+        
+         
+
+        </style>  
+</head>
+  
+<body>
+    <!-- NAVBAR STARTING -->
+    <!-- Use navbar class to the navbar logo 
+        to the far left of the screen-->
+        <div>
+    <nav class=" navbar navbar-expand-lg 
+         fixed-top navbar-dark py-lg-0  ">
+  
+        <a class="navbar-brand" href="#">
+  
+            <!-- Add logo with size of 90*80 -->
+            <img src="t.jpeg"
+            width="90" height="80" alt="">  Travia
+        </a>
+          
+        <button class="navbar-toggler" type="button"
+                data-toggle="collapse" 
+                data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                  
+                <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse"
+                id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Something more
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">About</a>
+                        <a class="dropdown-item" href="offers.html">Offers</a>
+                      </div>
+                      </li>
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="tours.html">Tours</a>
+                </li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Bookings
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="flight.html">Flight bookings</a>
+                      <a class="dropdown-item" href="#">Hotel bookings</a>
+                    </div>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="destinations.html">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+<br><br>
+<h1 style="text-align:center;color:white">Hotel Booking form</h1><br>
+<center><div class="container">
+    <div class="card custom-bg w-50 p-4 d-flex">
+        <form id="hotel-form" onsubmit="return validateForm()">
+            <div class="row">
+                <div class="form-group col-md align-items-start flex-column">
+                    <label for="destination" class="d-inline-flex">Destination</label>
+                    <input type="text" placeholder="City" class="form-control" id="destination" name="destination"
+                        required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md align-items-start flex-column">
+                    <label for="checkin-date" class=" d-inline-flex">Check-in</label>
+                    <input type="date" class="form-control" id="checkin-date" name="checkin-date"
+                        onkeydown="return false" required>
+                </div>
+                <div class="form-group col-md align-items-start flex-column">
+                    <label for="checkout-date" class=" d-inline-flex">Check-out</label>
+                    <input type="date" class="form-control" id="checkout-date" name="checkout-date"
+                        onkeydown="return false" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md align-items-start flex-column">
+                    <label for="guests" class="d-inline-flex col-auto">Guests</label>
+                    <select class="form-select" id="guests"
+                        onchange="javascript: dynamicDropdown(this.options[this.selectedIndex].value);">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+                <div class="form-group col-md align-items-start flex-column">
+                    <label for="rooms" class="d-inline-flex col-auto">Rooms</label>
+                    <select class="form-select" id="rooms">
+                        <option value="1">1</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-left col-auto">
+                    <button type="submit" class="btn btn-primary">Search hotels</button>
+                </div>
+                <div id="error" class="error text-danger"></div>
+            </div>
+        </form>
+    </div>
+</div></center>
+<script>
+    function dynamicDropdown(listIndex) {
+        document.getElementById("rooms").length = 0;
+    
+        for (let i = 1; i < Number(listIndex) + 1; i++) {
+            document.getElementById("rooms").options[i - 1] = new Option(i.toString(), i);
+        }
+    }
+</script>
+
+</body>
+</html>
